@@ -23,7 +23,7 @@ author:
 
 # Url settings
 url: "https://klise.now.sh"
-baseurl: /ekko771.github.io
+baseurl:
 permalink: /:title/
 google_analytics:
 fb_appid:
