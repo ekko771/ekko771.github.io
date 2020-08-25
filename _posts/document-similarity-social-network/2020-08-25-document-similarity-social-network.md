@@ -13,25 +13,38 @@ description: This project is to compare the similarity of documents.
 
 TF-IDF stands for “Term Frequency, Inverse Document Frequency.” It’s a way to score the importance of words (or “terms”) in a document based on how frequently they appear across multiple documents.
 
-![Alt text](tf-idf.png)
+<figure>
+<img src="/document-similarity-social-network/tf-idf.png" alt="tf-idf">
+</figure>
+
 
 ### Calculate cosine similarity matrix.
 
-![Alt text](similarity_matrix.png)
+<figure>
+<img src="/document-similarity-social-network/similarity_matrix.png" alt="similarity matrix">
+</figure>
 
 ### Calculate nodes relationships with threshold-based neighbors.
 
-![Alt text](pick.gif)
+<figure>
+<img src="/document-similarity-social-network/pick.gif" alt="pick neighbors">
+</figure>
 
 ## What is Vis.js
 
 A dynamic, browser based visualization library. The library is designed to be easy to use, to handle large amounts of dynamic data, and to enable manipulation of and interaction with the data. The library consists of the components DataSet, Timeline, Network, Graph2d and Graph3d.
 
 ## Document Social Network Result
-![Alt text](document-network.png)
+
+<figure>
+<img src="/document-similarity-social-network/document-network.png" alt="document network result">
+</figure>
 
 ### Practical application
-![Alt text](recommand.png)
+
+<figure>
+<img src="/document-similarity-social-network/recommand.png" alt="document similarity application">
+</figure>
 
 ## Methodology references: 
 
