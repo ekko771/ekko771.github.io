@@ -1,18 +1,20 @@
 ---
-title: Colophon
+title: Kroos Chen
 permalink: /about/
 layout: page
-excerpt: Hello peeps, I'm student of computer science from Banyuwangi, living in Jogjakarta. This blog for documentation about my programming journey, running on jekyll, hosting on netlify and using my own simple theme.
+excerpt: Self-learning, attentive, and being able to take responsibility are matters that I value.
 comments: false
 ---
 
-He's a student from Banyuwangi, living in Jogjakarta. the blog for documentation about his programming 🎒 journey, running on jekyll, hosting on [now.sh](http://now.sh) and using his own theme, he name it <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">klisé</a>, he also loves to learning web technology; but he often forgot, that a reason why him doing the writing.
+## Introduction 
+My name is Kroos. I hold a master’s degree with a major in computer science which was awarded to me by National Chung Hsing University in 2018. My lab major research domains is Artificial Intelligence, Internet of Things and Data Analysis.
 
-If you have a question about him or else, just send a letter to him.
+## Skill
+Machine Learning, Natural Language Processing, Backend, Internet of Things, Crawler, Kubernetes.
 
-You can [report](http://github.com/piharpi/jekyll-klise/issues/new) if there is an broken link(s) or somethings else.
+### Project
 
 ##### may u needs ✨
 
-- {{ site.author.email }}
-- github.com/{{ site.author.github }}
+- Email : {{ site.author.email }}
+- Github : {{ site.author.github }}
