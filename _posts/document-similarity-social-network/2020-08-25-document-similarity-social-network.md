@@ -14,22 +14,15 @@ image: "/document-similarity-social-network/tf-idf.png"
 
 TF-IDF stands for “Term Frequency, Inverse Document Frequency.” It’s a way to score the importance of words (or “terms”) in a document based on how frequently they appear across multiple documents.
 
-<figure>
-<img src="/document-similarity-social-network/tf-idf.png" alt="tf-idf">
-</figure>
-
+![tf-idf]({{site.baseurl}}/_posts/document-similarity-social-network/tf-idf.png)
 
 ### Calculate cosine similarity matrix.
 
-<figure>
-<img src="/document-similarity-social-network/similarity_matrix.png" alt="similarity matrix">
-</figure>
+![similarity matrix]({{site.baseurl}}/_posts/document-similarity-social-network/similarity_matrix.png)
 
 ### Calculate nodes relationships with threshold-based neighbors.
 
-<figure>
-<img src="/document-similarity-social-network/pick.gif" alt="pick neighbors">
-</figure>
+![pick neighbors]({{site.baseurl}}/_posts/document-similarity-social-network/pick.gif)
 
 ## What is Vis.js
 
@@ -37,15 +30,11 @@ A dynamic, browser based visualization library. The library is designed to be ea
 
 ## Document Social Network Result
 
-<figure>
-<img src="/document-similarity-social-network/document-network.png" alt="document network result">
-</figure>
+![document network result]({{site.baseurl}}/_posts/document-similarity-social-network/document-network.png)
 
 ### Practical application
 
-<figure>
-<img src="/document-similarity-social-network/recommand.png" alt="document similarity application">
-</figure>
+![document similarity application]({{site.baseurl}}/_posts/document-similarity-social-network/recommand.png)
 
 ## Methodology references: 
 
