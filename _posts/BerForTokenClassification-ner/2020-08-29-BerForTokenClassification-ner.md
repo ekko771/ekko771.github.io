@@ -106,6 +106,30 @@ if args.n_gpu > 1:
     model = torch.nn.DataParallel(model, device_ids=[0,1])
 ```
 
+## 更新參數
+
+主要就是根據args.gradient_accumulation_steps這個參數來決定執行多少個step去更新參數，optimizer.step()是根據梯度更新參數，model.zero_grad()則是直接將模型的梯度清為零。
+```
+if args.n_gpu > 1:
+    loss = loss.mean()  # mean() to average on multi-gpu parallel training
+if args.gradient_accumulation_steps > 1:
+    loss = loss / args.gradient_accumulation_steps
+
+if args.fp16:
+    with amp.scale_loss(loss, optimizer) as scaled_loss:
+        scaled_loss.backward()
+    torch.nn.utils.clip_grad_norm_(amp.master_params(optimizer), args.max_grad_norm)
+else:
+    loss.backward()
+    torch.nn.utils.clip_grad_norm_(model.parameters(), args.max_grad_norm)
+
+tr_loss += loss.item()
+if (step + 1) % args.gradient_accumulation_steps == 0:
+    scheduler.step()  # Update learning rate schedule
+    optimizer.step()
+    model.zero_grad()
+    global_step += 1
+```
 ## 輸出結果
 ```
 input:  The International Atomic Energy Agency is to hold second day of talks in Vienna Wednesday on how to respond to Iran's resumption of low-level uranium conversion .
