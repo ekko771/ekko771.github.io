@@ -12,17 +12,17 @@ description: This article is Fine-Tune BERT for Named Entity Recognition.
 During my master's period, there were two projects. The first is to analyze the relationship network diagram of the characters in the novel, and the second is to use neo4j to draw the network of Chinese stars. Recently, I need to apply DBpedia, SparQL and social network technology in my work, so I made a prototype of the founder’s social network by the way.
 
 1. relationship network diagram of the characters in the novel.
-![Alt text](novel-network.png)
+![Alt text](https://raw.githubusercontent.com/ekko771/ekko771.github.io/master/_posts/American_technology_company_founders/novel-network.png)
 2. relationship network diagram of the star.
-![Alt text](star-social-network.png)
+![Alt text](https://raw.githubusercontent.com/ekko771/ekko771.github.io/master/_posts/American_technology_company_founders/star-social-network.png)
 
 3. relationship network diagram of Mini Yang 2-degrees of separation.
-![Alt text](Mini-Yang-2-social-Degrees-of-Separation.png)
+![Alt text](https://raw.githubusercontent.com/ekko771/ekko771.github.io/master/_posts/American_technology_company_founders/Mini-Yang-2-social-Degrees-of-Separation.png)
 
 4. sex-relationship network diagram of Shu Fanny 4-degrees of separation.
-![Alt text](Shu-Fanny-sex-2-social-Degrees-of-Separation.png)
+![Alt text](https://raw.githubusercontent.com/ekko771/ekko771.github.io/master/_posts/American_technology_company_founders/Shu-Fanny-sex-2-social-Degrees-of-Separation.png)
 5. relationship network diagram of the star couple.
-![Alt text](star-couple.png)
+![Alt text](https://raw.githubusercontent.com/ekko771/ekko771.github.io/master/_posts/American_technology_company_founders/star-couple.png)
 
 ## What is Social Network?
 A social network is a social structure made up of a set of social actors (such as individuals or organizations), sets of dyadic ties, and other social interactions between actors. The social network perspective provides a set of methods for analyzing the structure of whole social entities as well as a variety of theories explaining the patterns observed in these structures. The study of these structures uses social network analysis to identify local and global patterns, locate influential entities, and examine network dynamics.
@@ -156,7 +156,7 @@ def get_American_technology_company_founders_subjects(founders):
 A dynamic, browser based visualization library. The library is designed to be easy to use, to handle large amounts of dynamic data, and to enable manipulation of and interaction with the data. The library consists of the components DataSet, Timeline, Network, Graph2d and Graph3d.
 
 ## Result
-![Alt text](American_technology_company_founders_result.png)
+![Alt text](https://raw.githubusercontent.com/ekko771/ekko771.github.io/master/_posts/American_technology_company_founders/American_technology_company_founders_result.png)
 
 ## Methodology references: 
 
