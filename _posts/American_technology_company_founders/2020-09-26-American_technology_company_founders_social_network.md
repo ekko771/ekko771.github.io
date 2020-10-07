@@ -5,7 +5,8 @@ tags: [Social-Netwrok, DBpedia, Ontology, Neo4j]
 description: This article is Fine-Tune BERT for Named Entity Recognition.
 ---
 # American Technology Company Founders Social Network
-### In this blog, we will use [DBpedia](https://wiki.dbpedia.org/) and [SparQL](https://jena.apache.org/tutorials/sparql.html) to build a social network.
+
+ In this blog, we will use [DBpedia](https://wiki.dbpedia.org/) and [SparQL](https://jena.apache.org/tutorials/sparql.html) to build a social network.
 
 ## Preface
 
@@ -25,19 +26,23 @@ During my master's period, there were two projects. The first is to analyze the 
 ![Alt text](https://raw.githubusercontent.com/ekko771/ekko771.github.io/master/_posts/American_technology_company_founders/star-couple.png)
 
 ## What is Social Network?
+
 A social network is a social structure made up of a set of social actors (such as individuals or organizations), sets of dyadic ties, and other social interactions between actors. The social network perspective provides a set of methods for analyzing the structure of whole social entities as well as a variety of theories explaining the patterns observed in these structures. The study of these structures uses social network analysis to identify local and global patterns, locate influential entities, and examine network dynamics.
 
 
 ## What is DBpedia?
 
-### DBpedia is a crowd-sourced community effort to extract structured content from the information created in various Wikimedia projects. This structured information resembles an open knowledge graph (OKG) which is available for everyone on the Web. A knowledge graph is a special kind of database which stores knowledge in a machine-readable form and provides a means for information to be collected, organised, shared, searched and utilised. Google uses a similar approach to create those knowledge cards during search. We hope that this work will make it easier for the huge amount of information in Wikimedia projects to be used in some new interesting ways. 
+ DBpedia is a crowd-sourced community effort to extract structured content from the information created in various Wikimedia projects. This structured information resembles an open knowledge graph (OKG) which is available for everyone on the Web. A knowledge graph is a special kind of database which stores knowledge in a machine-readable form and provides a means for information to be collected, organised, shared, searched and utilised. Google uses a similar approach to create those knowledge cards during search. We hope that this work will make it easier for the huge amount of information in Wikimedia projects to be used in some new interesting ways. 
+
 ## What is SparQL?
 
-### SPARQL is a query language and a protocol for accessing RDF designed by the W3C RDF Data Access Working Group. 
+ SPARQL is a query language and a protocol for accessing RDF designed by the W3C RDF Data Access Working Group. 
 
-### As a query language, SPARQL is “data-oriented” in that it only queries the information held in the models; there is no inference in the query language itself.  Of course, the Jena model may be ‘smart’ in that it provides the impression that certain triples exist by creating them on-demand, including OWL reasoning.  SPARQL does not do anything other than take the description of what the application wants, in the form of a query, and returns that information, in the form of a set of bindings or an RDF graph.
+ As a query language, SPARQL is “data-oriented” in that it only queries the information held in the models; there is no inference in the query language itself.  Of course, the Jena model may be ‘smart’ in that it provides the impression that certain triples exist by creating them on-demand, including OWL reasoning.  SPARQL does not do anything other than take the description of what the application wants, in the form of a query, and returns that information, in the form of a set of bindings or an RDF graph.
+
 ## Get American Technology Company Founders
-### We will use SparQL to access the DBpedia endpoint to find American technology company founders.
+
+ We will use SparQL to access the DBpedia endpoint to find American technology company founders.
 
 ### Function:
 ```
@@ -82,7 +87,8 @@ def get_American_technology_company_founders():
     "name": "Arnold_Orville_Beckman"
   },
 ```
-### Next, we must crawling their subjects for the founders so that we can build a relationship network in the future.
+
+ Next, we must crawling their subjects for the founders so that we can build a relationship network in the future.
 
 ### Function:
 ```
@@ -149,7 +155,8 @@ def get_American_technology_company_founders_subjects(founders):
   },
 ]
 ```
-### Finally, we must calculate the co-occurrence subject between the founders and build a social network through Vis.js
+
+ Finally, we must calculate the co-occurrence subject between the founders and build a social network through Vis.js
 
 ## What is Vis.js
 
