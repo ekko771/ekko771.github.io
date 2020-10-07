@@ -55,6 +55,7 @@ X = [0, 1, 0, 1, 1, 1, 1, 1, 0, 0, ]
 CBOW類神經網路的結構就是:
 
 ![](https://raw.githubusercontent.com/ekko771/ekko771.github.io/master/_posts/Word2Vector/cbow.png)
+
 最終的輸出層的尺寸1 * 10 =（1 * 10）*（10 * m）*（m * 10）
 m為隱藏層的大小
 實際輸出就是根據輸入X以及兩個參數矩陣w和b計算後輸入到softmax函數所得的結果：
@@ -83,18 +84,23 @@ J(θ) = (y1-0)*(y1-0) +  (y2-0)*(y2-0) +  (y3-0)*(y3-0) +  (y4-0)*(y4-0) +  (y5-
 裴秀智 =  [w41, w42... w4m]
 ```
 理解CBOW後，而Skip-gram模型就非常簡單了，CBOW模型是用詞的前後幾個詞來預測這個詞，而Skip-gram模型則是用一個詞來預測他周圍的詞則架構圖為下。
+
 ![](https://raw.githubusercontent.com/ekko771/ekko771.github.io/master/_posts/Word2Vector/skip-gram.png)
 
 圖還是跟CBOW畫的那個圖相似的，只不過輸入X不是那幾個詞的向量和了，而是“裴秀智”對應的向量。簡單來講Skip-gram 是利用中心詞來預測上下文，假定「裴秀智」為模型的輸入，則輸出為固定 window 長度3的上下文詞彙，如「明天 」、「在 」、「首爾」、「和」、「我」、「拍攝」。
 
-skip-gram input samples:
+### skip-gram input samples:
 ![skip-gram input samples](https://raw.githubusercontent.com/ekko771/ekko771.github.io/master/_posts/Word2Vector/skip-gram-training-samples.png)
 
 
 ## WORD2VECTOR tool
 
 講到word2vetor的工具，一定是先使用gemsim，這個函式庫包含了許多NLP的方法可以使用，而也包裝了word2vector常用的兩種方法，至於怎麼使用可以參考reference，而以下的結果圖，就是針對韓國明星和中國明星使用CBOW建出來的並使用PCA將embedding降為2維的空間圖。
+
+### word-top10
 ![word-top10](https://raw.githubusercontent.com/ekko771/ekko771.github.io/master/_posts/Word2Vector/gensim_word2vector_result.png)
+
+### result
 ![中國明星VS韓國明星](https://raw.githubusercontent.com/ekko771/ekko771.github.io/master/_posts/Word2Vector/word2vector.png)
 
 ## Reference
